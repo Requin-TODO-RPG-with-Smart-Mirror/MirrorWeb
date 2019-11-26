@@ -17,6 +17,18 @@ function setDate() {
 	document.getElementById('nowDate').innerHTML = year+'년 '+month+'월 '+day+'일';
 	document.getElementById('nowTime').innerHTML = hours+'시 '+minutes+'분 '+seconds+'초';
 }
+function setWeather() {
+	var xmlData;
+	axios({
+		method: "GET",
+		url: "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1168066000",
+	}).then(data => {
+		console.log(data);
+		xmlData = data;
+	}).catch(data => {
+		console.log(data);
+	});
+}
 window.onload = function() {
 	setDate();
 	playAlert = setInterval(function() {

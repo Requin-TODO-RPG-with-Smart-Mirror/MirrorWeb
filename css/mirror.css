@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #000000;
+}
+
+#bar {
+	height: 10px;
+	width: 74%;
+	background-color: #27BEFF;
+}
+#top {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	padding-top: 20px;
+}
+#top #left {
+	height: 100%;
+	width: 50%;
+	border: 1px solid #ff0000;
+}
+#top #left #userInfo {
+	display: flex;
+	height: 20%;
+    width: 90%;
+    margin: auto;
+	padding: 20px;
+}
+#top #left #userInfo > div:first-child {
+	height: 80%;
+    width: 30%;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 25px;
+}
+#top #left #userInfo > div:first-child > img {
+	position: relative;
+	height: inherit;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#top #left #userInfo > div p:first-child {
+	font-size: 5em;
+}
+#top #left #userInfo > div p:nth-child(2) {
+	padding-left: 0.5em;
+    font-size: 3em;
+}
+#top #right {
+	height: 100%;
+	width: 50%;
+}
+#top #right > #time {
+	width: 90%;
+	margin: auto;
+	text-align: right;
+}
+#top #right > #time > p:first-child {
+	font-size: 2.5em;
+}
+#top #right > #time > p:nth-child(2) {
+	font-size: 2em;
+}
+#top #right > #weather {
+	display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+}
+#top #right > #weather img {
+	float: right;
+}
