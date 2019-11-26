@@ -80,12 +80,13 @@
 					<input id="newListTitle" type="text" placeholder="계획을 입력하세요." />
 					<div>
 						<input id="newListDate" type="text" placeholder="날짜를 선택하세요." onfocus="(this.type='date')" onblur="(this.type='text')" />
-						<select name="items1">
-							<option value="HTML">HTML</option>
-							<option value="자바스크립트">자바스크립트</option>
-							<option value="CSS">CSS</option>
+						<select name="newListImportant">
+							<option value="1">중요</option>
+							<option value="2">보통</option>
+							<option value="3">낮음</option>
 						</select>
 					</div>
+					<button>생성</button>
 				</li>
 				<li class="mainMenuList">상점</li>
 				<li id="myPage" class="mainMenuList">
@@ -103,7 +104,9 @@
 						<div class="shopItem"><img src="img/skin/6.png" /></div>
 					</div>
 				</li>
-				<li class="mainMenuList">설정</li>
+				<li id="setting" class="mainMenuList">
+					<img src="img/settingPage.png" />
+				</li>
 			</ul>
 		</div>
 	</main>

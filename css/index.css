@@ -25,6 +25,7 @@ header > div > p {
     height: max-content;
     width: -webkit-fill-available;
     font-size: 2rem;
+	font-weight: bold;
     top: 100%;
 	color: #2E2E2E;
     transform: translate(0, -110%);
@@ -43,16 +44,14 @@ main > #menuList {
 }
 main > div > ul {
 	display: flex;
-	height: 100%;
 	width: 500%;
 	list-style: none;
+	padding-bottom: 5%;
 }
 main > div > ul > .mainMenuList {
-	height: 80%;
 	width: 100vw;
-	padding: 1%;
+	padding: 1% 1% 100px 1%;
 	transition: 0.5s;
-	padding-bottom: 5%;
 }
 #newList > img {
 	width: 100%;
@@ -88,6 +87,20 @@ main > div > ul > .mainMenuList {
 	outline: none;
 	text-align: center;
 }
+#newList > button {
+	position: relative;
+	height: 40px;
+	width: 30%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #FFFFFF;
+	background-color: #202020;
+	border: none;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	margin-top: 20px;
+	outline: none;
+}
 #myPage > #myLevel {
 	font-size: 1.2rem;
 }
@@ -104,7 +117,7 @@ main > div > ul > .mainMenuList {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	height: 45%;
+	height: 170px;
 	padding: 5%;
 	background-color: #FFFFFF;
 	overflow: scroll;
@@ -165,6 +178,15 @@ main > div > ul > .mainMenuList {
 	border-radius: 25px;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+#setting {
+	position: relative;
+}
+#setting > img {
+	position: absolute;
+	width: 100%;
+	top: -50px;
+	left: 0;
 }
 footer {
 	position: fixed;
