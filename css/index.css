@@ -179,14 +179,47 @@ main > div > ul > .mainMenuList {
 	top: 50%;
 	transform: translate(0, -50%);
 }
+#store > p {
+	font-size: 1rem;
+}
+#store > img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 80%;
+}
+#store > div {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 200px;
+	width: 100%;
+	background-color: #FFFFFF;
+	overflow: scroll;
+}
 #setting {
 	position: relative;
 }
 #setting > img {
 	position: absolute;
 	width: 100%;
-	top: -50px;
+	top: -5%;
 	left: 0;
+}
+#setting > button {
+	position: absolute;
+	height: 40px;
+	width: 40%;
+	top: 30%;
+	left: 50%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	transform: translate(-50%, 0);
+	background-color: #FFFFFF;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+	color: #FF6B6B;
 }
 footer {
 	position: fixed;
@@ -213,7 +246,7 @@ footer {
 	color: inherit;
 }
 #footer_menu  .footer_menu_img {
-	height: 70%;
+	height: 20px;
 	opacity: 0.7;
 	transition: 0.3s;
 }
