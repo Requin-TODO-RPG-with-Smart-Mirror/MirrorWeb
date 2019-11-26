@@ -124,7 +124,7 @@ main > div > ul > .mainMenuList {
 	border-radius: 20px;
 }
 #myPage > #itemList > .shopItem {
-	height: 50%;
+	height: 60%;
 	width: 30%;
 	margin: 5% 0;
 	border: 1px solid #000000;
@@ -179,23 +179,48 @@ main > div > ul > .mainMenuList {
 	top: 50%;
 	transform: translate(0, -50%);
 }
-#store > p {
+#store > div {
+	height: 80%;
+	overflow: scroll;
+}
+#store > div > p {
 	font-size: 1rem;
 }
-#store > img {
+#store > div > img {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 80%;
 }
-#store > div {
+#store > div > div {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	height: 200px;
+	height: 25%;
+	padding: 5%;
+	border-radius: 10px;
+}
+#store > div > div > div {
+	height: 50%;
+	width: 30%;
+	margin: 5% 0;
+	border: 1px solid #000000;
+	box-shadow: 0 1px 3px #000000;
+}
+#store > div > div > div > img {
+	height: 100%;
 	width: 100%;
-	background-color: #FFFFFF;
-	overflow: scroll;
+}
+#store > div > div > div > button {
+	position: relative;
+	width: 70%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 1rem;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	background-color: #2E2E2E;
 }
 #setting {
 	position: relative;
