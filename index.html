@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 	<title>Todo-RPG</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -9,18 +9,85 @@
 <body>
 	<header>
 		<div>
-			<p>To do list</p>
+			<p id="headerTitle">To do list</p>
 			<img src="img/logo.png" />
 		</div>
 	</header>
-	<main></main>
+	<main>
+		<div>
+			<ul>
+				<li id="toDoList" class="mainMenuList">
+					<div>
+						<button>중요도 높음</button>
+						<div>
+							<img src="img/unCheck.png" />
+							<p>기말고사 준비하기</p>
+							<button>삭제</button>
+						</div>
+						<div>
+							<img src="img/check.png" />
+							<p>어머니 생신선물 사기</p>
+							<button>삭제</button>
+						</div>
+						<div>
+							<img src="img/unCheck.png" />
+							<p>해커톤 우승하기</p>
+							<button>삭제</button>
+						</div>
+					</div>
+					
+					<div>
+						<button>중요도 중간</button>
+						<div>
+							<img src="img/unCheck.png" />
+							<p>라면 사오기</p>
+							<button>삭제</button>
+						</div>
+						<div>
+							<img src="img/check.png" />
+							<p>겨울방학 여행 계획 세우기</p>
+							<button>삭제</button>
+						</div>
+					</div>
+					
+					<div>
+						<button>중요도 낮음</button>
+						<div>
+							<img src="img/check.png" />
+							<p>브론즈 탈출하기</p>
+							<button>삭제</button>
+						</div>
+						<div>
+							<img src="img/unCheck.png" />
+							<p>카페인 마시기</p>
+							<button>삭제</button>
+						</div>
+						<div>
+							<img src="img/unCheck.png" />
+							<p>책장 정리하기</p>
+							<button>삭제</button>
+						</div>
+						<div>
+							<img src="img/check.png" />
+							<p>설거지 하기</p>
+							<button>삭제</button>
+						</div>
+					</div>
+				</li>
+				<li class="mainMenuList">리스트 추가</li>
+				<li class="mainMenuList">상점</li>
+				<li class="mainMenuList">프로필</li>
+				<li class="mainMenuList">설정</li>
+			</ul>
+		</div>
+	</main>
 	<footer>
 		<div id="footer_menu">
-			<img src="img/menu.png" />
-			<img src="img/plus.png" />
-			<img src="img/shop.png" />
-			<img src="img/profile.png" />
-			<img src="img/setting.png" />
+			<a href="#"><img src="img/menu.png" class="footer_menu_img" onclick="changeMenu(this, 'To do list', 0)" /></a>
+			<a href="#"><img src="img/plus.png" class="footer_menu_img" onclick="changeMenu(this, 'New list', 1)" /></a>
+			<a href="#"><img src="img/shop.png" class="footer_menu_img" onclick="changeMenu(this, 'Shop', 2)" /></a>
+			<a href="#"><img src="img/profile.png" class="footer_menu_img" onclick="changeMenu(this, 'Profile', 3)" /></a>
+			<a href="#"><img src="img/setting.png" class="footer_menu_img" onclick="changeMenu(this, 'Setting', 4)" /></a>
 		</div>
 	</footer>
 </body>
