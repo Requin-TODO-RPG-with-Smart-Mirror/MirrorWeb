@@ -1,5 +1,10 @@
 function changeMenu(tag, title, page) {
 	document.getElementById('headerTitle').innerHTML = title;
+	if(page == 0) {
+		document.getElementById('menuList').style = 'overflow-y: scroll';
+	} else {
+		document.getElementById('menuList').style = 'overflow-y: hidden';
+	}
 	
 	let list = document.getElementsByClassName('footer_menu_img');
 	for(var i = 0; i < list.length; i++) {

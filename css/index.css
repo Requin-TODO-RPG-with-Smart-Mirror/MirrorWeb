@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif !important;
 }
 body {
 	height: 100vh;
@@ -31,22 +33,93 @@ header > div > img {
 	height: 80%;
 }
 main {
+	height: 80%;
 	width: 100%;
-	overflow: hidden;
 }
-main > div {
-	min-height: 80%;
+main > #menuList {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 main > div > ul {
 	display: flex;
+	height: 100%;
 	width: 500%;
 	list-style: none;
 }
 main > div > ul > .mainMenuList {
-	min-height: 50%;
+	height: 80%;
 	width: 100vw;
 	padding: 1%;
 	transition: 0.5s;
+	padding-bottom: 5%;
+}
+#newList > img {
+	width: 100%;
+}
+#newList > p {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#newList > #newListTitle {
+	height: 40px;
+	width: 100%;
+	outline: none;
+	border: 1px solid #202020;
+	border-radius: 7px;
+	margin-bottom: 15px;
+	padding: 0 5%;
+	box-shadow: 1px 1px 3px #0000008c;
+}
+#newList > #newListTitle:hover {
+	border: 1px solid #9C0BC0;
+}
+#newList > div {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	width: 100%;
+}
+#newList > div > input, #newList > div > select {
+	width: 45%;
+	background-color: #FFFFFF;
+	border: 1px solid #202020;
+	border-radius: 7px;
+	outline: none;
+	text-align: center;
+}
+#myPage > #myLevel {
+	font-size: 1.2rem;
+}
+#myPage > div {
+	text-align: center;
+}
+#myPage > div > img {
+	width: 50%;
+}
+#myPage > div > p {
+	font-size: 1.5rem;
+}
+#myPage > #itemList {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 45%;
+	padding: 5%;
+	background-color: #FFFFFF;
+	overflow: scroll;
+	border-radius: 20px;
+}
+#myPage > #itemList > .shopItem {
+	height: 50%;
+	width: 30%;
+	margin: 5% 0;
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
+#myPage > #itemList > .shopItem > img {
+	height: 100%;
+	width: 100%;
 }
 #toDoList > div {
 	min-height: 30%;

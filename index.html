@@ -14,7 +14,7 @@
 		</div>
 	</header>
 	<main>
-		<div>
+		<div id="menuList">
 			<ul>
 				<li id="toDoList" class="mainMenuList">
 					<div>
@@ -74,9 +74,35 @@
 						</div>
 					</div>
 				</li>
-				<li class="mainMenuList">리스트 추가</li>
+				<li id="newList" class="mainMenuList">
+					<img src="img/newList.png" />
+					<p>새로 만들기</p>
+					<input id="newListTitle" type="text" placeholder="계획을 입력하세요." />
+					<div>
+						<input id="newListDate" type="text" placeholder="날짜를 선택하세요." onfocus="(this.type='date')" onblur="(this.type='text')" />
+						<select name="items1">
+							<option value="HTML">HTML</option>
+							<option value="자바스크립트">자바스크립트</option>
+							<option value="CSS">CSS</option>
+						</select>
+					</div>
+				</li>
 				<li class="mainMenuList">상점</li>
-				<li class="mainMenuList">프로필</li>
+				<li id="myPage" class="mainMenuList">
+					<p id="myLevel">Level 5</p>
+					<div>
+						<img src="img/user/test.png" />
+						<p>LeagueLugas</p>
+					</div>
+					<div id="itemList">
+						<div class="shopItem"><img src="img/skin/1.png" /></div>
+						<div class="shopItem"><img src="img/skin/2.png" /></div>
+						<div class="shopItem"><img src="img/skin/3.png" /></div>
+						<div class="shopItem"><img src="img/skin/4.png" /></div>
+						<div class="shopItem"><img src="img/skin/5.png" /></div>
+						<div class="shopItem"><img src="img/skin/6.png" /></div>
+					</div>
+				</li>
 				<li class="mainMenuList">설정</li>
 			</ul>
 		</div>
@@ -86,7 +112,7 @@
 			<a href="#"><img src="img/menu.png" class="footer_menu_img" onclick="changeMenu(this, 'To do list', 0)" /></a>
 			<a href="#"><img src="img/plus.png" class="footer_menu_img" onclick="changeMenu(this, 'New list', 1)" /></a>
 			<a href="#"><img src="img/shop.png" class="footer_menu_img" onclick="changeMenu(this, 'Shop', 2)" /></a>
-			<a href="#"><img src="img/profile.png" class="footer_menu_img" onclick="changeMenu(this, 'Profile', 3)" /></a>
+			<a href="#"><img src="img/profile.png" class="footer_menu_img" onclick="changeMenu(this, 'My page', 3)" /></a>
 			<a href="#"><img src="img/setting.png" class="footer_menu_img" onclick="changeMenu(this, 'Setting', 4)" /></a>
 		</div>
 	</footer>
