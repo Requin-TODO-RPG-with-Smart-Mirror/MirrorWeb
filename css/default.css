@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+body {
+	background-color: #000000;
+}
+
+#bar {
+	height: 10px;
+	width: 74%;
+	background-color: #27BEFF;
+}
+#top {
+	display: flex;
+	height: 50%;
+	width: 100%;
+}
+#top #left {
+	height: 100%;
+	width: 50%;
+	border: 1px solid #ff0000;
+}
+#top #left #userInfo {
+	height: 20%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ff0000;
+}
+#top #right {
+	height: 100%;
+	width: 50%;
+	border: 1px solid #ff0000;
+}
+#top #right > #time {
+	font-size: 2.5em;
+	text-align: right;
+	border: 1px solid #ff0000;
+}
