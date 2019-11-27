@@ -1,0 +1,28 @@
+#todo {
+    width: 100vw;
+    
+}
+#todo_register_text, #todo_radio_text {
+    display: none;
+}
+.please_input_list_name, .please_check_radio {
+    display: inline !important;
+    font-size: 5px;
+    color: red;
+}
+.todo_checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.todo_checkbox_checked {
+    border: 2px solid blue;
+    background-color: blue;
+}
+.todo_checkbox_nochecked {
+    display: inline-block;
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}

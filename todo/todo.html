@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="../reset.css">
+    <title>todo</title>
+    <script src="../axios.js"></script>
+    <script src="../socketio.js"></script>
+</head>
+<body>
+    <div id="todo">
+        
+        <div class="todo_create_li">
+            <p id="exp"></p>
+            <div id="todo_register_input_wrap">
+                <span id="todo_register_text">리스트의 이름을 입력해주세요.</span>
+                <input type="text" placeholder="이름" id="todo_register_input">
+            </div>
+            <span id="todo_radio_text">중요도 중 하나를 선택해주세요.</span>
+            <span>중요도: </span>
+            <label for="todo_radio1">1</label>
+            <input type="radio" name="todo_important" class="todo_important_radio" id="todo_radio1" value="1"/>
+            <label for="todo_radio2">2</label>
+            <input type="radio" name="todo_important" class="todo_important_radio" id="todo_radio2" value="2" />
+            <label for="todo_radio3">3</label>
+            <input type="radio" name="todo_important" class="todo_important_radio" id="todo_radio3" value="3" />
+            <div id="todo_register_button">
+                <button>등록하기</button>
+            </div>
+        </div>
+
+        <div id="todo_show_li">
+            <ul id="todo_show_li_ul">
+                
+            </ul>
+        </div>
+
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

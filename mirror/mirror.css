@@ -1,0 +1,30 @@
+#box {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: 1.5s;
+}
+.crownBoy {
+    display: inline-block;
+    width: 18em;
+    position: relative;
+    bottom: -25px;
+}
+#box_back {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url('../img/back.png');
+    background-position: center;
+    background-size: contain;
+    width: 100vw;
+    height: 5vh;
+    z-index: -1;
+}
+#crownBoyLeft {
+    display: none;
+}
+#crownBoyRight {
+    display: none;
+}

@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Todo-RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="index.css" rel="stylesheet">
+    <script src="../axios.js"></script>
+    <script src="../socketio.js"></script>
+    <title>index</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p id="headerTitle">To do list</p>
+            <img src="img/logo.png" />
+        </div>
+    </header>
+    <main>
+        <div id="menuList">
+            <ul>
+
+                <li id="toDoList" class="mainMenuList">
+                    <div id="important_high"></div>
+                    <div id="important_normal"></div>
+                    <div id="important_low"></div>
+                </li>
+
+                <li id="newList" class="mainMenuList">
+                    <img src="img/newList.png" />
+                    <p>새로 만들기</p>
+                    <input id="newListTitle" type="text" placeholder="계획을 입력하세요." />
+                    <div>
+                        <input id="newListDate" type="text" placeholder="날짜를 선택하세요." onfocus="(this.type='date')"
+                            onblur="(this.type='text')" />
+                        <select name="newListImportant">
+                            <option value="1" selected>중요</option>
+                            <option value="2">보통</option>
+                            <option value="3">낮음</option>
+                        </select>
+                    </div>
+                    <button id="newListButton">생성</button>
+                </li>
+
+                <li id="store" class="mainMenuList">
+                    <div>
+                        <p>이번 달 특별 세일</p>
+                        <img src="img/shopPage.png" />
+                        <div>
+                            <div><img src="img/skin/skin-1.png" /><button class="shopBuyButton">구매</button></div>
+                            <div><img src="img/skin/skin-2.png" /><button class="shopBuyButton">구매</button></div>
+                            <div><img src="img/skin/skin-3.png" /><button class="shopBuyButton">구매</button></div>
+                            <div><img src="img/skin/skin-4.png" /><button class="shopBuyButton">구매</button></div>
+                            <div><img src="img/skin/skin-5.png" /><button class="shopBuyButton">구매</button></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="myPage" class="mainMenuList">
+                    <p id="myLevel"></p>
+                    <p id="myExp"></p>
+                    <p id="myMoney"></p>
+                    <div>
+                        <img id="myChar" src="img/skin/skin-0-0.png" />
+                        <p id="userName"></p>
+                    </div>
+                    <div id="itemList">
+                        
+                    </div>
+                </li>
+                <li id="setting" class="mainMenuList">
+                    <img src="img/settingPage.png" />
+                    <button>로그아웃</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_menu">
+            <a href="#"><img src="img/menu.png" class="footer_menu_img" onclick="changeMenu(this, 'To do list', 0)"
+                    style="transform: scale(1.25)" /></a>
+            <a href="#"><img src="img/plus.png" class="footer_menu_img" onclick="changeMenu(this, 'New list', 1)" /></a>
+            <a href="#"><img src="img/shop.png" class="footer_menu_img" onclick="changeMenu(this, 'Store', 2)" /></a>
+            <a href="#"><img src="img/profile.png" class="footer_menu_img"
+                    onclick="changeMenu(this, 'My page', 3); getUserInfo();"/></a>
+            <a href="#"><img src="img/setting.png" class="footer_menu_img"
+                    onclick="changeMenu(this, 'Setting', 4)" /></a>
+        </div>
+    </footer>
+    <script src="setting.js"></script>
+    <script src="store.js"></script>
+    <script src="mypage.js"></script>
+    <script src="setting.js"></script>
+    <script src="todolist.js"></script>
+    <script src="newList.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

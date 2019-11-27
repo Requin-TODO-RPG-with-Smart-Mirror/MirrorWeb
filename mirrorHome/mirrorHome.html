@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Todo-RPG</title>
+    <link href="mirrorHome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <script src="../socketio.js"></script>
+    <script src="../axios.js"></script>
+    <link rel="stylesheet" href="../mirror/mirror.css">
+    <title>mirrorHome</title>
+</head>
+<body>
+
+    <div id="bar"></div>
+    <div id="top">
+        <div id="left">
+            <div id="userInfo">
+                <div>
+                    <img src="../img/icon.png" />
+                </div>
+                <div>
+                    <p id="userName"></p>
+                    <p id="userLevel"></p>
+                    <p id="userExp"></p>
+                    <p id="userMoney"></p>
+                </div>
+            </div>
+            <div id="quest">
+                <h3>퀘스트<span id="quest_rest"></span></h3>
+                <div id="quest_list">
+                    <ul>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="time">
+                <p id="nowDate"></p>
+                <p id="nowTime"></p>
+            </div>
+            <div id="temp">
+                
+            </div>
+            <div id="weather">
+                <h1>서울</h1>
+                <img />
+            </div>
+        </div>
+    </div>
+    <div id="box">
+        <img src="../img/crownLeft.png" id="crownBoyLeft" class="crownBoy" alt="crownBoy">
+        <img src="../img/crownright.png" id="crownBoyRight" class="crownBoy" alt="crownBoy">
+    </div>
+    <div id="box_back"></div>
+    <script src="../mirror/mirror.js"></script>
+    <script src="mirrorHome.js"></script>
+</body>
+</html>
